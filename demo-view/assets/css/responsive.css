@@ -1,0 +1,380 @@
+@media (max-width:1219px){
+    .slider .rev_slider ul li .banner-caption-h1{
+        font-size: 60px;
+    }
+}
+@media (max-width:1199px){
+    .header-top p{
+        overflow: hidden;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        display: block;
+    }
+    .service .box-service-1 .box-img .box-hover h3{
+        font-size: 18px;
+    }
+    .contact-us.home .text-left li .text{
+        font-size: 16px;
+    }
+    .single-service h4{
+        font-size: 18px;
+    }
+    .form-submit{
+        margin-bottom: 35px;
+    }
+    .post-post-thumbnail h4{
+        font-size: 16px;
+    }
+    .box-service{
+        margin: 0 auto;
+    }
+    .appointment-form .form-submit.home-2{
+        margin-top: 35px;
+        margin-bottom: 0;
+    }
+    .contact-us.home.about .text-left li{
+        width: 100%;
+        margin-bottom: 25px !important;
+        border: 1px solid #ddd;
+    }
+    .images-right img{
+        display: block;
+        margin: 0 auto;
+    }
+    #menu-wrapper .nav > li > a{
+        padding: 16px 16px 22px;
+    }
+}
+@media (max-width:1024px){
+    #menu-wrapper .nav > li .sub-menu{
+        width: 180px;
+    }
+}
+@media (max-width:991px){
+    .padding-top{
+        padding-top: 60px;
+    }
+    .padding{
+        padding: 60px 0px ;
+    }
+    .padding-bottom{
+        padding-bottom: 60px;
+    }
+    .contact-us.home .text-left > h2{
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    .header-ct.text-home h2{
+        margin-bottom: 40px;
+    }
+    .header-ct.text-home h2:before{
+        bottom: -20px;
+    }
+    .home.section-list,
+    .project.home .padding-top,
+    .blog-list .blog-home{
+        padding-top: 50px;
+    }
+    .single-service.home{
+        margin-bottom: 30px;
+    }
+    .home.section-list .col-md-4:last-child .single-service.home{
+        margin-bottom: 0;
+    }
+    .form-submit{
+        padding: 30px;
+    }
+    .blog-list .blog-home .post-blog{
+        margin-bottom: 30px;
+    }
+    .contact-us .form-submit p, .appointment-form .form-submit p{
+        margin-bottom: 25px;
+    }
+    .service .box-service-1 .box-img .box-hover h3{
+        padding: 20px 30px 20px;
+        background: #6664d4bd;
+        font-size: 14px;
+    }
+    .contact-us.home .text-left li .icon img{
+        height: 27px;
+    }
+    .contact-us.home .text-left li .text{
+        font-size: 14px;
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        white-space: nowrap;
+    }
+    .images-right img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .social-footer{
+        margin-right: 0;
+    }
+    .sidebar{
+        margin-top: 50px;
+    }
+    .service-details .sidebar,.project-details .sidebar{
+        margin-top: 0;
+    }
+    .container.container-custom{
+        width: 100%;
+    }
+    #menu-wrapper .nav .btn-ge-quote{
+        display: none;
+    }
+    #menu-wrapper .nav > li > a{
+        padding: 16px 14px 22px;
+    }
+    .client-section.padding{
+        padding-top: 120px;
+    }
+}
+@media (max-width:767px){
+    .header-top{
+        display: none;
+    }
+    #menu-wrapper .nav > li.has-child .icon{
+        display: block;
+    }
+    #menu-wrapper .nav > li{
+        border-bottom: 1px solid #fff;
+    }
+    #menu-wrapper .nav > li:nth-last-child(2){
+        border-bottom: 0px;
+    }
+    #menu-wrapper .nav > li .sub-menu{
+        width: 100%;
+        opacity: 1;
+        display: none;
+        position: static;
+        -webkit-transform: none;
+        transform: none;
+        -webkit-transition: none;
+        transition: none;
+    }
+    .navbar-default .navbar-collapse{
+        background: #6664d4;
+        margin-top: 20px;
+    }
+    .navbar-default .navbar-toggle{
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+    .navbar-default .navbar-toggle .icon-bar{
+        background: #fff;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+        background: transparent;
+    }
+    .service .box-service-1{
+        margin-bottom: 30px;
+    }
+    .service .box-service-1 .box-content{
+        margin-top: 10px;
+    }
+    .project.home .single-project{
+        margin-bottom: 30px;
+    }
+    .single-project .text > h4{
+        padding-bottom: 15px;
+    }
+    .post-blog .text, .single-project .text{
+        margin-top: 20px;
+    }
+    .service .box-service-1.last{
+        margin-bottom: 0;
+    }
+    .service .box-service-1 .box-img img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .client-slider .item{
+        margin: 0 10px;
+    }
+    .service .box-service-1:hover .box-img .box-hover h3{
+        display: none;
+    }
+    .single-project .image img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .single-project h4.hided{
+        display: none;
+    }
+    .post-post-thumbnail h4{
+        display: none;
+    }
+    .blog-list .blog-home .post-blog{
+        margin-bottom: 45px;
+    }
+    .blog-list .blog-home .post-blog.last{
+        margin-bottom: 0;
+    }
+    .subscribe .form-inline input{
+        margin: 0 auto;
+    }
+    .footer-colum{
+        margin-bottom:30px;
+    }
+    .site-footer{
+        padding-bottom: 0;
+    }
+    .client-slider-content .name .icon img{
+        margin-bottom: 20px;
+    }
+    .client-slider .name{
+        position: inherit;
+        margin-bottom: 0;
+    }
+    .text-slider{
+        padding-left: 0;
+    }
+    .our-mission{
+        margin-bottom: 50px;
+    }
+    .our-mission > img{
+        margin-top: 0;
+    }
+    .contact-us.about .col-lg-6:last-child .our-mission{
+        margin-bottom: 0;
+    }
+}
+@media (max-width:640px){
+    .header-baner{
+        padding: 100px 0 100px;
+    }
+}
+@media (max-width:510px){
+    .blog-details .post-next-previous .social-icon{
+        position: relative;
+        -webkit-transform: none;
+        transform: none;
+        left: auto;
+        top: auto;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .post-next-previous .page-changer li{
+        float: none !important;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .post-next-previous .page-changer li:last-child{
+        padding-bottom: 0;
+    }
+    .blog-details .about-author .author-data img{
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+    }
+    .blog-details .about-author .author-data .text-about{
+        text-align: center;
+        padding-left: 0;
+        float: none !important;
+        width: 100%;
+    }
+    .header-ct > h2{
+        font-size: 30px;
+    }
+    .blog-details .blog-list.padding{
+        padding-bottom: 30px;
+    }
+}
+@media (max-width:479px){
+    .navbar-default{
+        margin-top: 10px;
+    }
+    .navbar-default .navbar-collapse{
+        margin-top: 3px;
+    }
+    .contact-us .form-submit input, .appointment-form .form-submit input, .appointment-form .form-submit select, .contat-form .form-submit select{
+        height: 50px;
+    }
+    .contact-us.home .text-left > h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .text-left span{
+        font-size: 28px;
+    }
+    .text-left > p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .header-ct.text-home h2{
+        font-size: 30px;
+    }
+    .contact-us .form-submit p, .appointment-form .form-submit p{
+        line-height: 35px;
+    }
+    .text-consultants > h4 span{
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 38px;
+    }
+    .single-project .text p{
+        font-size: 14px;
+    }
+    .post-blog .text .title{
+        padding-bottom: 40px;
+    }
+}
+@media (max-width:414px){
+    .contact-us.home .text-left li .icon{
+        float: none;
+    }
+    .contact-us.home .text-left li .icon img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .contact-us.home .text-left li .text{
+        margin-left: 0;
+        text-align: center;
+    }
+    .subscribe .form-inline input{
+        width: 278px;
+    }
+    .form-submit{
+        padding: 35px 20px;
+    }
+    .slider .rev_slider ul li .banner-caption-h1{
+        padding: 0 10px
+    }
+    .header-baner h2{
+        font-size: 50px;
+    }
+    .action-btn .button-one.p-bg-color{
+        padding: 4px 6px;
+        font-size: 14px;
+    }
+
+}
+@media (max-width:375px){
+    .header-baner h2{
+        font-size: 38px;
+    }
+    .address img{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .info-contact .social{
+        text-align: center !important;
+    }
+}
+@media (max-width:320px){
+    .action-btn .button-one.p-bg-color{
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+    .subscribe .form-inline input{
+        width: 252px;
+    }
+}

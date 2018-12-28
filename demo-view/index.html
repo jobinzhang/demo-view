@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+    }
+
+    ng\:form {
+        display: block;
+    }
+
+    .ng-animate-shim {
+        visibility: hidden;
+    }
+
+    .ng-anchor {
+        position: absolute;
+    }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>出版社</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/vendor/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/revolution/css/settings.css">
+    <link rel="stylesheet" href="assets/revolution/css/layers.css">
+    <link rel="stylesheet" href="assets/revolution/css/navigation.css">
+    <link rel="stylesheet" href="dist/pageSwitch.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-01 ng-scope loaded" ng-app="myApp" ng-controller="myCtrl">
+
+
+<!-- 遮罩层 -->
+<div id="spinner-wrapper" style="display: none;">
+    <div class="spinnerload">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
+
+<div id="wrapper">
+    <!-- 头部 -->
+    <!-- ngInclude: 'header.html' -->
+    <div ng-include="'header.html'" class="ng-scope">
+        <header id="header" class="site-header ng-scope">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                            <a href="index.html"><img id="logo" src="../images/upload/70265922.jpg"></a>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 text-right">
+                            <!-- <input type="text" id="allSearch" class="allSearch" placeholder="请输入关键字" /> <span
+                                class="btnSearch"><i class="fa fa-search"></i></span> -->
+                            <div class="gzhPar">
+                                <img class="gonggao gonggaoA" src="..../images/g1.png">
+                                <img class="ewm1" id="QRcode1" src="../images/ewmm.jpg">
+                                <img class="gonggao gonggaoB" src="..../images/g2.png">
+                                <img class="ewm2" id="QRcode2" src="../images/ewmm.jpg">
+                            </div>
+                            <div style="display:none;text-align:left;" id="weixinDiv">
+                                <img id="headimgurl" src=""
+                                     style="width:40px;height:40px;border-radius: 20px;margin-left: 10px;" alt="头像">
+                                <p id="nickname" class="wechatName" title=""></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <nav class="navbar navbar-default">
+                    <div class="container container-custom">
+                        <div id="menu-wrapper" class="collapse navbar-collapse navbar-ex1-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">首页</a></li>
+                                <li><a href="">企业概况</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="corCulture.html">企业文化</a></li>
+                                        <li><a href="growthExp.html">成长历程</a></li>
+                                        <li><a href="corHonor.html">企业荣誉</a></li>
+                                        <li><a href="contactUs.html">联系我们</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" id="productDesc">产品介绍</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="products.html?type=1" id="xiaoxue">小学</a>
+                                            <!-- <ul class="sub-menu-third">
+                                                <li><a href="product1-P.html">阳光小伙伴</a></li>
+                                                <li><a href="product2-P.html">拉网</a></li>
+                                                <li><a href="product3-P.html">常规</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li>
+                                            <a href="products.html?type=2" id="chuzhong">初中</a>
+                                            <!-- <ul class="sub-menu-third">
+                                                <li><a href="product1-J.html">阳光小伙伴</a></li>
+                                                <li><a href="product2-J.html">拉网</a></li>
+                                                <li><a href="product3-J.html">常规</a></li>
+                                            </ul> -->
+                                        </li>
+                                        <li>
+                                            <a href="products.html?type=3" id="gaozhong">高中</a>
+                                            <!-- <ul class="sub-menu-third">
+                                                <li><a href="product1-H.html">阳光小伙伴</a></li>
+                                                <li><a href="product2-H.html">拉网</a></li>
+                                                <li><a href="product3-H.html">常规</a></li>
+                                            </ul> -->
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">读者服务</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="reCenter.html">资源中心</a></li>
+                                        <li><a href="mLesson.html">壹学微课</a></li>
+                                        <li><a href="softDown.html">软件下载</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">英才招聘</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="talentRecruit.html">英才招聘</a></li>
+                                        <li><a href="talentIdea.html">英才理念</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="blog.html">购书平台</a>
+                                    <ul class="sub-menu">
+                                        <li><a id="tianmao" href="https://www.tmall.com/" target="_blank">天猫旗舰店</a></li>
+                                        <li><a id="jingdong" href="https://www.jd.com/" target="_blank">京东旗舰店</a></li>
+                                        <li><a id="dangdang" href="http://www.dangdang.com" target="_blank">当当旗舰店</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <script type="text/javascript" class="ng-scope">
+            $(function () {
+
+                window.onscroll = function () {
+                    var t = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (t >= 95) {
+                        $(".header-nav").addClass("header-nav-scrol");
+                    } else {
+                        $(".header-nav").removeClass("header-nav-scrol");
+                    }
+
+                    //产品
+                    $("#wrapper>.product-div2").toggleClass("title-switch", t > 150)
+                };
+
+                //公众号A
+                $(".gonggaoA").hover(function () {
+                    $(".ewm1").css({
+                        "width": "140px",
+                        "height": "160px"
+                    })
+                }, function () {
+                    $(".ewm1").css({
+                        "width": "0px",
+                        "height": "0px"
+                    })
+                });
+
+                //公众号B
+                $(".gonggaoB").hover(function () {
+                    $(".ewm2").css({
+                        "width": "140px",
+                        "height": "160px"
+                    })
+                }, function () {
+                    $(".ewm2").css({
+                        "width": "0px",
+                        "height": "0px"
+                    })
+                });
+
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/Apicontent/queryConfigByName?configName=jingdong',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#jingdong').attr('href', data.config.configValue);
+                    }
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/Apicontent/queryConfigByName?configName=tianmao',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#tianmao').attr('href', data.config.configValue);
+                    }
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/Apicontent/queryConfigByName?configName=dangdang',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#dangdang').attr('href', data.config.configValue);
+                    }
+                });
+                $.ajax({
+                    type: 'POST',
+                    url: '/Apicontent/queryConfigByName?configName=logo',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#logo').attr('src', data.config.configValue);
+                    }
+                });
+                $.ajax({
+                    type: 'POST',
+                    url: '/Apicontent/queryConfigByName?configName=QRcode1',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#QRcode1').attr('src', data.config.configValue);
+                    }
+                });
+                $.ajax({
+                    type: 'POST',
+                    url: '/Apicontent/queryConfigByName?configName=QRcode2',
+                    contentType: 'application/json; charset=UTF-8',
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#QRcode2').attr('src', data.config.configValue);
+                    }
+                });
+
+                var isLogin = $.cookie("isLogin");
+                if ("1" == isLogin) {
+                    $("#weixinDiv").css("display", "inline-block");
+                    $("#headimgurl").attr('src', $.cookie("headimgurl"));
+                    $("#nickname").attr('title', $.cookie("nickname"));
+                    $("#nickname").text($.cookie("nickname"));
+                }
+                else {
+                    $("#weixinDiv").css("display", "none");
+                }
+
+            });
+
+
+        </script>
+    </div>
+
+    <!-- 轮播 -->
+    <div id="container">
+        <div class="sections" style="width: 300%; transition: all 1000ms ease-in; transform: translateX(-584.938px);">
+            <!-- ngRepeat: item in rotationList -->
+            <div class="section ng-scope" ng-repeat="item in rotationList" on-finish=""
+                 style="width: 33.33%; float: left;"><img ng-src="../images/indexbanner.jpg"
+                                                          src="../images/indexbanner.jpg"></div>
+            <!-- end ngRepeat: item in rotationList -->
+            <div class="section ng-scope" ng-repeat="item in rotationList" on-finish=""
+                 style="width: 33.33%; float: left;"><img ng-src="../images/indexbanner2.jpg"
+                                                          src="../images/indexbanner2.jpg"></div>
+            <!-- end ngRepeat: item in rotationList -->
+            <div class="section ng-scope" ng-repeat="item in rotationList" on-finish=""
+                 style="width: 33.33%; float: left;"><img ng-src="../images/indexbanner3.jpg"
+                                                          src="../images/indexbanner3.jpg"></div>
+            <!-- end ngRepeat: item in rotationList -->
+        </div>
+        <ul class="pages horizontal">
+            <li class=""></li>
+            <li class="active"></li>
+            <li class=""></li>
+        </ul>
+    </div>
+
+    <!-- 内容1 -->
+    <div class="contact-us padding-top home service" style="cursor:pointer">
+        <a href="products.html?type=1&amp;pid=1">
+        </a>
+        <div class="box-service-1"><a href="products.html?type=1&amp;pid=1">
+        </a>
+            <div class="box-img"><a href="products.html?type=1&amp;pid=1">
+                <img ng-src="../images/index1.jpg" alt="Images" src="../images/index1.jpg">
+            </a>
+                <div class="box-hover"><a href="products.html?type=1&amp;pid=1">
+                </a>
+                    <h3><a href="products.html?type=1&amp;pid=1">
+                    </a><a href="products.html?type=1&amp;pid=1" class="ng-binding">阳光小伙伴</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 内容2 -->
+    <div class="contact-us padding-top home service">
+        <!-- <div class="container container-my"> -->
+        <ul class="product1">
+            <li>
+                <a href="products.html?type=1&amp;pid=2">
+                </a>
+                <div class="box-service-1"><a href="products.html?type=1&amp;pid=2">
+                </a>
+                    <div class="box-img"><a href="products.html?type=1&amp;pid=2">
+                        <img ng-src="../images/index4.png" alt="Images" src="../images/index4.png">
+                    </a>
+                        <div class="box-hover"><a href="products.html?type=1&amp;pid=2">
+                        </a>
+                            <h3><a href="products.html?type=1&amp;pid=2"></a><a href="products.html?type=1&amp;pid=2"
+                                                                                class="ng-binding">拉网</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <a href="products.html?type=1&amp;pid=3">
+                </a>
+                <div class="box-service-1"><a href="products.html?type=1&amp;pid=3">
+                </a>
+                    <div class="box-img"><a href="products.html?type=1&amp;pid=3">
+                        <img ng-src="../images/index5.jpg" alt="Images" src="../images/index5.jpg">
+                    </a>
+                        <div class="box-hover"><a href="products.html?type=1&amp;pid=3">
+                        </a>
+                            <h3><a href="products.html?type=1&amp;pid=3"></a><a href="products.html?type=1&amp;pid=3"
+                                                                                class="ng-binding">常规</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+    <!-- 内容3 -->
+    <div class="contact-us padding-top home service" style="margin-bottom: 30px;cursor:pointer">
+        <a href="products.html?type=1&amp;pid=73">
+        </a>
+        <div class="box-service-1"><a href="products.html?type=1&amp;pid=73">
+        </a>
+            <div class="box-img"><a href="products.html?type=1&amp;pid=73">
+                <img ng-src="../images/upload/83371234.jpg" alt="Images" src="../images/upload/83371234.jpg">
+            </a>
+                <div class="box-hover"><a href="products.html?type=1&amp;pid=73">
+                </a>
+                    <h3><a href="products.html?type=1&amp;pid=73">
+                    </a><a href="products.html?type=1&amp;pid=73" class="ng-binding">首页4</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 底部 -->
+    <!-- ngInclude: 'footer.html' -->
+    <div ng-include="'footer.html'" class="ng-scope">
+        <div class="site-footer padding ng-scope">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-12 footer-colum">
+                        <div class="footer-link">
+                            <h3>企业概况</h3>
+                            <ul class="menu-footer">
+                                <li><a href="corCulture.html">企业文化</a></li>
+                                <li><a href="growthExp.html">成长历程</a></li>
+                                <li><a href="corHonor.html">企业荣誉</a></li>
+                                <li><a href="contactUs.html">联系我们</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12 footer-colum">
+                        <div class="footer-link">
+                            <h3>产品介绍</h3>
+                            <ul class="menu-footer">
+                                <li><a href="products.html?type=1">小学</a></li>
+                                <li><a href="products.html?type=2">初中</a></li>
+                                <li><a href="products.html?type=3">高中</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12 footer-colum">
+                        <div class="footer-link">
+                            <h3>读者服务</h3>
+                            <ul class="menu-footer">
+                                <li><a href="reCenter.html">资源中心</a></li>
+                                <li><a href="mLesson.html">壹学微课</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12 footer-colum">
+                        <div class="footer-link">
+                            <h3>英才招聘</h3>
+                            <ul class="menu-footer">
+                                <li><a href="talentRecruit.html">英才招聘</a></li>
+                                <li><a href="talentIdea.html">英才理念</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12 footer-colum">
+                        <div class="footer-link">
+                            <h3>购书平台</h3>
+                            <ul class="menu-footer">
+                                <li><a href="#">天猫旗舰店</a></li>
+                                <li><a href="#">京东旗舰店</a></li>
+                                <li><a href="#">当当旗舰店</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-12 footer-colum">
+                        <div class="footer-newletter">
+                            <h3>联系我们 <span>___</span></h3>
+                            <ul class="post-blog">
+                                <li>
+                                    <a href="#">咨询电话</a>
+                                    <div class="date">营销中心:0588-88888888</div>
+                                    <div class="date">人力资源:0588-88888888</div>
+                                </li>
+                                <li>
+                                    <a href="#">企业邮箱</a>
+                                    <div class="date">jiangsu18888@163.com</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright ng-scope">
+            <div class="container text-center">
+                <p>Copyright 2018 jiangsudiyichubanshe , All Rights <a href="">Reserved</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="introz_backtop" class="introz-scroll-top"><span class="fa fa-angle-up"></span></div>
+<!-- jQuery -->
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<!-- Boostrap -->
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/owl.carousel.min.js"></script>
+<!-- Main -->
+<script src="assets/js/main.js"></script>
+<script src="angular/angular.min.js"></script>
+<script src="dist/pageSwitch.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
